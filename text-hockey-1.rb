@@ -55,7 +55,7 @@ input = gets.chomp.to_i
 				puts "Scramble for the loose puck..."
 					if rand > 0.65 #scramble
 						puts "You got the puck back!"
-						sf = sf/2.round(0)
+						sf = sf/2
 					else 
 						puts "CPU gathers the puck and starts up the ice."
 						p = 2
@@ -99,7 +99,7 @@ rand = rand(0)
 			gets.chomp
 		else
 			puts "Blocked by your goalie."
-			sf = sf/2.round(0)
+			sf = sf/2
 			rand = rand(0) 
 			puts "Scramble for the loose puck..."
 				if rand > 0.65 #scramble
